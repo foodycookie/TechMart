@@ -23,10 +23,13 @@ class keyboard: public category {
         double price;
 
         keyboard(string name,string brand,double price,string type,int id): category(type,id),name(name),brand(brand),price(price) {}
+
+        void getInformation() {
+            cout << id << endl << type << endl << name << endl << brand << endl << price;
+        }
 };
 
 int main() {
     keyboard keyboard1("MXMECHANICAL","Logitech",979,"keyboard",1);
-
-    cout << keyboard1.id << endl << keyboard1.type << endl << keyboard1.name << endl << keyboard1.brand << endl << keyboard1.price;
+    keyboard1.getInformation();
 }
