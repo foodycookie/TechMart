@@ -32,5 +32,4 @@ class keyboard: public category {
 int main() {
     keyboard keyboard1("MXMECHANICAL","Logitech",979,"keyboard",1);
     keyboard1.getInformation();
-    //nsiwndwiwdn
 }
